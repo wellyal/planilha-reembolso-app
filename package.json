@@ -2,7 +2,13 @@
   "name": "planilha-reembolso-app",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {},
+  "devDependencies": {
+    "@storybook/addon-backgrounds": "^3.0.0",
+    "@storybook/addon-centered": "^3.1.9",
+    "@storybook/addon-info": "^3.1.9",
+    "@storybook/react": "^3.1.9",
+    "prop-types": "^15.5.10"
+  },
   "dependencies": {
     "autoprefixer": "7.1.1",
     "babel-core": "6.25.0",
@@ -46,7 +52,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "jest": {
     "collectCoverageFrom": [
