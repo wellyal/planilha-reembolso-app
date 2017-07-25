@@ -1,12 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import SignIn from 'components/pages/SignIn'
+
+import rootReducer from './reducers'
 import registerServiceWorker from './registerServiceWorker'
-import SignIn from './components/pages/SignIn'
+import './index.css'
 import Routes from './Routes'
 
+let store = createStore(rootReducer)
+
 ReactDOM.render(
-  <Routes />,
+  <Provider store={store}>
+    <Routes />
+  </Provider>,
   document.getElementById('root')
 );
 

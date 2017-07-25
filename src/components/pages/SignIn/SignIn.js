@@ -6,6 +6,7 @@ import './SignIn.css'
 
 class SignIn extends Component {
   render() {
+    console.log('bla', this.props.test)
     return (
       <div className="SignIn">
         <div className="form">
@@ -23,7 +24,7 @@ class SignIn extends Component {
     )
   }
 
-  signin = () => console.log('called')
+  signin = () => this.props.setSuccess()
 }
 
 export default SignIn;

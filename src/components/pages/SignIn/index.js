@@ -1,3 +1,3 @@
-import SignIn from './SignIn'
+import SignIn from './SignIn.container'
 
 export default SignIn
