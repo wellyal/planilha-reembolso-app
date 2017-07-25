@@ -3,7 +3,7 @@ import infoAddon from '@storybook/addon-info';
 
 setAddon(infoAddon)
 
-const requires = require.context('../src', true, /storybook\.js$/)
+const requires = require.context('../', true, /storybook\.js$/)
 
 const loadStories = () => requires.keys().forEach(requires)
 

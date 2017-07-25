@@ -18,3 +18,30 @@
 .btn.default:hover {
   background-color: #7C0707;
 }
+
+.btn.loading {
+  font-size: 0;
+  cursor: not-allowed;
+}
+
+.btn.loading:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

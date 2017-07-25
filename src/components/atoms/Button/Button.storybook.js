@@ -18,3 +18,8 @@ storiesOf('Button', module)
     () => <Button onClick={action('clicked')}>Default Button</Button>,
     defaultInfoProps
   )
+  .addWithInfo(
+    'loading',
+    () => <Button className="btn default loading">Default Button</Button>,
+    defaultInfoProps
+  )

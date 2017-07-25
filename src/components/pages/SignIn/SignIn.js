@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Button from 'components/atoms/Button'
 import Input from 'components/atoms/Input'
-import './SignIn.css';
+
+import './SignIn.css'
 
 class SignIn extends Component {
   render() {
