@@ -7,6 +7,10 @@
     "@storybook/addon-centered": "^3.1.9",
     "@storybook/addon-info": "^3.1.9",
     "@storybook/react": "^3.1.9",
+    "postcss-color-function": "^4.0.0",
+    "postcss-import": "^10.0.0",
+    "postcss-scss": "^1.0.2",
+    "precss": "^2.0.0",
     "prop-types": "^15.5.10"
   },
   "dependencies": {

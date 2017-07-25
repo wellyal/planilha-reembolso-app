@@ -1,8 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
 
-import Button from './Button'
+import Input from './Input'
 
 const defaultInfoProps = {
   inline: true,
@@ -12,9 +11,14 @@ const defaultInfoProps = {
   maxPropStringLength: 100
 }
 
-storiesOf('Button', module)
+storiesOf('Input', module)
   .addWithInfo(
-    'default',
-    () => <Button onClick={action('clicked')}>Default Button</Button>,
+    'text',
+    () => <Input type="text" elementId="email" />,
+    defaultInfoProps
+  )
+  .addWithInfo(
+    'password',
+    () => <Input type="password" elementId="senha"/>,
     defaultInfoProps
   )
