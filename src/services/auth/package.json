@@ -1,0 +1,4 @@
+{
+  "name": "Authentication Service Module",
+  "main": "./auth"
+}

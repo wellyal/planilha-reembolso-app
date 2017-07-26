@@ -1,0 +1,4 @@
+{
+  "name": "Auth Saga",
+  "main": "./auth"
+}

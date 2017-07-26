@@ -1,17 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore, compose } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
-import SignIn from 'components/pages/SignIn'
+import createSagaMiddleware from 'redux-saga'
 
 import rootReducer from './reducers'
+import rootSaga from './sagas'
+import Routes from './Routes'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
-import Routes from './Routes'
+
+const sagaMiddleware = createSagaMiddleware()
 
 let store = createStore(
   rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  compose(
+    applyMiddleware(sagaMiddleware),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 )
 
 ReactDOM.render(
@@ -21,4 +27,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+sagaMiddleware.run(rootSaga)
 registerServiceWorker();

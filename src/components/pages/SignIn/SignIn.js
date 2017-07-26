@@ -6,7 +6,7 @@ import './SignIn.css'
 
 class SignIn extends Component {
   render() {
-    console.log('bla', this.props.test)
+    console.log('bla', this.props.auth)
     return (
       <div className="SignIn">
         <div className="form">
@@ -24,7 +24,7 @@ class SignIn extends Component {
     )
   }
 
-  signin = () => this.props.setSuccess()
+  signin = () => this.props.signin()
 }
 
 export default SignIn;
