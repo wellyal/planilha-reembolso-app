@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import TableContent from 'components/organisms/TableContent'
 
-const Stylesheet = () => {
-  return (
-    <div>
-      <TableContent />
-    </div>
-  )
-}
+export default class Stylesheet extends Component {
+  state = {
+    expenses: null
+  }
 
-export default Stylesheet
+  componentWillMount() {
+    this.setState({
+      expenses: this.props.getUserExpenses()
+    })
+  }
+
+  render() {
+    const { expenses } = this.state
+    return (
+      <div>
+        { expenses.isFetching
+          ? <div>Loading...</div>
+          : <TableContent expenses={expenses.data}/>
+        }
+      </div>
+    )
+  }
+}

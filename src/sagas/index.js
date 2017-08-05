@@ -1,9 +1,11 @@
-import { all } from 'redux-saga/effects'
+import { all, fork } from 'redux-saga/effects'
 
 import { watchAuthenticate } from './auth'
+import { watchGetUserExpenses } from './expenses'
 
 export default function* rootSaga() {
   yield all([
-    watchAuthenticate()
+    fork(watchAuthenticate),
+    watchGetUserExpenses
   ])
 }

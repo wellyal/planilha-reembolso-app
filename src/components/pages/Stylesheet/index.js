@@ -1,3 +1,3 @@
-import Stylesheet from './Stylesheet'
+import Stylesheet from './Stylesheet.container'
 
 export default Stylesheet

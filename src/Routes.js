@@ -7,7 +7,7 @@ import Topbar from 'components/organisms/Topbar'
 import SignIn from 'components/pages/SignIn'
 import Stylesheet from 'components/pages/Stylesheet'
 
-const Routes = () => (
+const Routes = (store) => (
   <Router>
     <div>
       <Route exact path="/" component={SignIn} />

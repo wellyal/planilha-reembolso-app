@@ -3,7 +3,7 @@ import { actionTypes } from 'reducers/auth'
 
 import authenticateService from 'services/auth'
 
-function* authenticate(payload) {
+export function *authenticate(payload) {
   try {
     const status = yield call(authenticateService.auth, payload)
     yield put({ type: actionTypes.SUCCESS, payload: status })
@@ -12,6 +12,6 @@ function* authenticate(payload) {
   }
 }
 
-export function* watchAuthenticate() {
+export function *watchAuthenticate() {
   yield takeEvery(actionTypes.REQUEST, authenticate)
 }

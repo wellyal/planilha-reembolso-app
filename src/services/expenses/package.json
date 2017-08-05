@@ -1,0 +1,4 @@
+{
+  "name": "Expenses Service Module",
+  "main": "./expenses"
+}
