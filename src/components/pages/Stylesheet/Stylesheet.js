@@ -1,8 +1,12 @@
 import React from 'react'
 
+import TableContent from 'components/organisms/TableContent'
+
 const Stylesheet = () => {
   return (
-    <h1>Logged</h1>
+    <div>
+      <TableContent />
+    </div>
   )
 }
 
