@@ -1,0 +1,15 @@
+.user-container {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.user-container .user-row {
+  margin-right: 10px
+}
+
+.user-container img.user-row {
+  height: 40px;
+  width: 50px;
+  border-radius: 50%;
+}

@@ -10,8 +10,9 @@ const signinRequest = createAction(actionTypes.REQUEST)
 
 const defaultState = {
   isFetching: false,
-  data: null,
-  error: null
+  success: null,
+  error: null,
+  data: null
 }
 
 const reducer = handleActions({
@@ -25,7 +26,8 @@ const reducer = handleActions({
     return {
       ...state,
       isFetching: false,
-      data: payload
+      success: true,
+      data: payload.data.authMock.data
     }
   },
   [actionTypes.FAILURE](state, {payload}) {

@@ -1,12 +1,8 @@
-.SignIn {
+.signin-container {
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
   height: 100vh;
   background: url(./signin_bg.jpg) no-repeat center center fixed;
-}
-
-.row {
-  margin-bottom: 10px;
 }
