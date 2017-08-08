@@ -20,6 +20,8 @@ let store = createStore(
   )
 )
 
+sagaMiddleware.run(rootSaga)
+
 ReactDOM.render(
   <Provider store={store}>
     <Routes store={store} />
@@ -27,5 +29,4 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
-sagaMiddleware.run(rootSaga)
 registerServiceWorker();

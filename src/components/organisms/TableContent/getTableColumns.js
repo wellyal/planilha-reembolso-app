@@ -9,6 +9,6 @@ export const getTableColumns = () =>
     Header: 'Valor',
     accessor: 'value'
   }, {
-    Header: 'Comentar',
+    Header: 'Comentario',
     accessor: 'comments'
   }]

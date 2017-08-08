@@ -27,7 +27,7 @@ const reducer = handleActions({
       ...state,
       isFetching: false,
       success: true,
-      data: payload
+      data: payload.data.expensesMock.data
     }
   },
   [actionTypes.FAILURE](state, {payload}) {

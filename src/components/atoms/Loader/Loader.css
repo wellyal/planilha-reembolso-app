@@ -1,0 +1,38 @@
+.loader {
+  display: flex;
+  height: calc(100vh - 60px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader__container {
+  text-align: center;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.loader__spin {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.loader p {
+  color: #acacac;
+  font-size: 16px;
+}
+
+.loader .loader__spin {
+  border: 2px solid transparent;
+  border-top: 2px solid #D60A15;
+  border-left: 2px solid #D60A15;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
