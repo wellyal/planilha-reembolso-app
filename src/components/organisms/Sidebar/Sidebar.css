@@ -2,28 +2,9 @@
   background: #dddddd;
   border-right: 1px solid #ccc;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .sidebar-container__button {
   padding: 30px 20px;
-}
-
-.sidebar-container__list div {
-  background: #cccccc;
-}
-
-.sidebar-container__list li {
-  background: #eeeeee;
-  cursor: pointer;
-}
-
-.sidebar-container__list div,
-.sidebar-container__list li {
-  border-bottom: 1px solid #ccc;
-  text-align: center;
-  padding: 15px;
-}
-
-.sidebar-container__list li:hover {
-  background-color: #cccccc;
 }

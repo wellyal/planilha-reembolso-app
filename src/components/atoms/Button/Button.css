@@ -19,6 +19,36 @@
   background-color: #7C0707;
 }
 
+.btn.secondary {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #6C9543;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #81BC29;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  opacity: .8;
+  cursor: not-allowed;
+}
+
+.btn:disabled:hover {
+  background-color: #ccc;
+}
+
+.btn.small {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+}
+
 .btn.loading {
   font-size: 0;
   cursor: not-allowed;

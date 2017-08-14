@@ -7,15 +7,14 @@ const Button = props => (
   <button {...props}>{props.children}</button>
 )
 
-Object.assign( Button, {
-  displayName: 'Button',
-  propTypes: {
-    className: Proptypes.string.isRequired,
-    onClick: Proptypes.func.isRequired
-  },
-  defaultProps: {
-    className: 'btn default'
-  }
-})
+Button.propTypes = {
+  className: Proptypes.string.isRequired,
+  onClick: Proptypes.func
+}
+
+Button.defaultProps = {
+  className: 'btn default',
+  onClick: () => null
+}
 
 export default Button

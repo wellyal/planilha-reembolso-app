@@ -1,0 +1,19 @@
+.sidebar-container__list__header {
+  background: #cccccc;
+}
+
+.sidebar-container__list__item {
+  background: #eeeeee;
+  cursor: pointer;
+}
+
+.sidebar-container__list__header,
+.sidebar-container__list__item {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 15px;
+}
+
+.sidebar-container__list__item:hover {
+  background-color: #cccccc;
+}

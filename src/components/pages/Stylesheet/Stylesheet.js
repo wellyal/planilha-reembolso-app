@@ -48,10 +48,12 @@ export default class Stylesheet extends Component {
         { expenses.isFetching
           ? <Loader />
           : (
-              <div className="stylesheet-container">
-                <Sidebar />
-                <TableContent expenses={expenses.data}/>
-              </div>
+              <section>
+                <div className="stylesheet-container">
+                  <Sidebar />
+                  <TableContent expenses={expenses.data}/>
+                </div>
+              </section>
             )
         }
       </div>

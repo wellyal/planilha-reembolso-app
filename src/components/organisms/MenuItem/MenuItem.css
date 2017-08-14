@@ -1,0 +1,9 @@
+.sidebar-container__list div {
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.sidebar-container__list:last-child {
+  border-bottom: 1px solid #ccc;
+}

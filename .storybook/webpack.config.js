@@ -1,3 +1,5 @@
+'use strict';
+
 const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
@@ -9,8 +11,6 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./../config/env');
 const paths = require('./../config/paths');
-
-const modulePaths = [path.resolve('./node_modules'), path.resolve('./src')];
 
 module.exports = {
   module: {
@@ -126,7 +126,5 @@ module.exports = {
       // Remember to add the new extension(s) to the "file" loader exclusion list.
     ],
   },
-  resolve: {
-    modules: modulePaths
-  }
+  resolve: { modules: [path.resolve('./src'), 'node_modules'] }
 }
